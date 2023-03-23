@@ -1,0 +1,73 @@
+@import '../shared/variables.scss';
+
+.friends-section {
+  padding-top: 80px;
+  padding-bottom: 100px;
+
+  background-color: $color-light-l;
+}
+
+.friends-content {
+  display: flex;
+  flex-direction: column;
+  gap: calc($std-gap * 3);
+  align-items: center;
+}
+
+.friends-heading {
+  max-width: 400px;
+  text-align: center;
+}
+
+/*===========================
+  slider wrapper and controls
+  ===========================*/
+
+.friends-slider {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.slide-prev-btn {
+  background-image: url('../../assets/img/3_friends/Arrow.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.slide-next-btn {
+  @extend .slide-prev-btn;
+
+  transform: scale(-1);
+}
+
+/*=============
+  slider itself
+  =============*/
+
+.slider-container {
+  max-width: 990px;
+  width: 100%;
+}
+
+.slider-track {
+  display: flex;
+  justify-content: space-between;
+}
+
+.slider-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: calc($std-gap * 1.5);
+
+  padding-bottom: calc($std-gap * 1.5);
+
+  background: $color-light-s;
+  border-radius: 9px;
+}
+
+.card-img{
+  width: 100%;
+}

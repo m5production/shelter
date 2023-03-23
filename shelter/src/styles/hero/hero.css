@@ -1,0 +1,28 @@
+.hero-wrapper {
+  background: radial-gradient(100% 215.42% at 0% 0%, #5B483A 0%, #262425 100%), #211F20;
+  padding-top: 180px;
+}
+
+.hero-section {
+  display: flex;
+  gap: 40px;
+}
+
+.text-wrapper {
+  padding-top: 163px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.main-heading {
+  color: #FFFFFF;
+}
+
+.hero-text {
+  color: #CDCDCD;
+}
+
+.hero-img {
+  width: 58.16%;
+}/*# sourceMappingURL=hero.css.map */

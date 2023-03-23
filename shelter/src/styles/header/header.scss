@@ -1,0 +1,92 @@
+@import '../shared/variables.scss';
+
+.absolute-container {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
+.main-header {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.main-header .content-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  .logo-title {
+    font-family: 'Georgia';
+    font-size: 32px;
+    line-height: 110%;
+
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.06em;
+
+    color: $color-primary;
+  }
+
+  .logo-subtitle {
+    font-size: 13px;
+    line-height: 15px;
+
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.1em;
+
+    color: $color-light-xl;
+  }
+}
+
+.main-nav {
+  max-width: 443px;
+  width: 100%;
+}
+
+.nav-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-list__item__link {
+  $letter-color: $color-dark-s;
+  $underline-color: $color-primary;
+
+  position: relative;
+  color: $letter-color;
+
+  transition: color $transition-time;
+
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: -7px;
+    left: 50%;
+    transform: translate(-50%);
+    
+    width: 0;
+    height: 3px;
+
+    background-color: $underline-color;
+
+    transition: $transition-time;
+  }
+
+  &:hover,
+  &.active {
+    color: $color-light-s;
+
+    &::after {
+      width: 100%;
+    }
+  }
+}

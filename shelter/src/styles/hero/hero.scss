@@ -1,0 +1,31 @@
+@import '../shared/variables.scss';
+
+.hero-wrapper {
+  background: radial-gradient(100% 215.42% at 0% 0%, #5B483A 0%, #262425 100%), #211F20;
+  padding-top: 180px;
+}
+
+.hero-section {
+  display: flex;
+  gap: calc($std-gap * 2);
+}
+
+.text-wrapper {
+  padding-top: 163px;
+
+  display: flex;
+  flex-direction: column;
+  gap: calc($std-gap * 2);
+}
+
+.main-heading {
+  color: $color-light-xl;
+}
+
+.hero-text {
+  color: $color-dark-s;
+}
+
+.hero-img {
+  width: 58.16%;
+}

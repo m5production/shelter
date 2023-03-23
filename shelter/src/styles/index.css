@@ -1,0 +1,10 @@
+@import './shared/my-reset.css';
+@import './shared/normalize.css';
+@import './shared/shared.css';
+@import './header/header.css';
+@import './hero/hero.css';
+@import './about/about.css';
+@import './friends/friends.css';
+@import './help/help.css';
+@import './donation/donation.css';
+@import './footer/footer.css';

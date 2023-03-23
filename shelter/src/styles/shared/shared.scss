@@ -1,0 +1,139 @@
+@import 'variables.scss';
+
+body{
+  min-height: 100vh;
+  scroll-behavior: smooth;
+}
+
+* {
+  box-sizing: border-box;
+
+  font-family: $arial-font;
+}
+
+.content-wrapper {
+  box-sizing: content-box;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 $std-gap;
+}
+
+.h-2 {
+  font-family: 'Georgia';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 44px;
+  line-height: 130%;
+
+  color: $color-dark-l;
+}
+
+.h-3 {
+  font-family: 'Georgia';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 35px;
+  line-height: 130%;
+
+  letter-spacing: 0.06em;
+
+  color: $color-dark-l;
+}
+
+.h-4 {
+  font-family: 'Georgia';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 115%;
+
+  letter-spacing: 0.06em;
+
+  color: $color-dark-l;
+}
+
+.h-5 {
+  font-family: 'Georgia';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 110%;
+
+  letter-spacing: 0.06em;
+
+  color: $color-dark-l;
+}
+
+.paragraph-l {
+  font-family: 'Arial';
+  font-size: 15px;
+  line-height: 160%;
+
+  color: $color-dark-xl;
+}
+
+.paragraph-s {
+  font-family: 'Arial';
+  font-style: italic;
+  font-size: 12px;
+  line-height: 150%;
+
+  color: $color-dark-m;
+}
+
+.btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  font-family: $georgia-font;
+
+  border-width: 2px;
+  border-style: solid;
+  border-radius: 100px;
+
+  transition: 0.3s;
+}
+
+.btn-primary {
+  width: 207px;
+  height: 52px;
+
+  // padding: 15px 45px;
+  // gap: 10px;
+
+  background: $color-primary;
+  border-color: transparent;
+}
+
+.btn-secondary {
+  @extend .btn-primary;
+
+  background: unset;
+  border-color: $color-primary;
+}
+
+.btn:hover {
+  background-color: $color-primary-light;
+  border-color: $color-primary-light;
+  cursor: pointer;
+}
+
+.btn-arrow,
+.btn-paginator,
+.btn-modal-close {
+  @extend .btn;
+
+  width: 52px;
+  height: 52px;
+  border-color: $color-primary;
+}
+
+.primary-color-text {
+  color: $color-primary;
+}
+
+.light-color-text {
+  color: $color-light-xl;
+}

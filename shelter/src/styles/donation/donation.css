@@ -1,0 +1,38 @@
+.donation-section {
+  padding-top: 80px;
+  padding-bottom: 100px;
+  background-color: #F6F6F6;
+}
+
+.donation-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.donation-text-wrapper {
+  max-width: 380px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.bank-card-number-container {
+  align-self: flex-start;
+  display: flex;
+  align-items: center;
+  padding: 10px 15px;
+  gap: 10px;
+  background-color: #F1CDB3;
+  border-radius: 9px;
+}
+.bank-card-number-container::before {
+  content: "";
+  width: 30px;
+  height: 23px;
+  flex-shrink: 0;
+  background-image: url("../../assets/img/5_donate/credit-card.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+}/*# sourceMappingURL=donation.css.map */

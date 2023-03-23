@@ -1,0 +1,73 @@
+.absolute-container {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
+.main-header {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.main-header .content-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.logo-container .logo-title {
+  font-family: "Georgia";
+  font-size: 32px;
+  line-height: 110%;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.06em;
+  color: #F1CDB3;
+}
+.logo-container .logo-subtitle {
+  font-size: 13px;
+  line-height: 15px;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.1em;
+  color: #FFFFFF;
+}
+
+.main-nav {
+  max-width: 443px;
+  width: 100%;
+}
+
+.nav-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-list__item__link {
+  position: relative;
+  color: #CDCDCD;
+  transition: color 0.3s;
+}
+.nav-list__item__link::after {
+  content: "";
+  position: absolute;
+  bottom: -7px;
+  left: 50%;
+  transform: translate(-50%);
+  width: 0;
+  height: 3px;
+  background-color: #F1CDB3;
+  transition: 0.3s;
+}
+.nav-list__item__link:hover, .nav-list__item__link.active {
+  color: #FAFAFA;
+}
+.nav-list__item__link:hover::after, .nav-list__item__link.active::after {
+  width: 100%;
+}/*# sourceMappingURL=header.css.map */
