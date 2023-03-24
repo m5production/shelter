@@ -23,8 +23,11 @@
   gap: 20px;
 }
 
+.current-page-btn {
+  background-color: #F1CDB3;
+}
 .current-page-btn:hover {
-  background-color: unset;
+  background-color: #F1CDB3;
   border-color: #F1CDB3;
   cursor: default;
 }/*# sourceMappingURL=friends-full.css.map */

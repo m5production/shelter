@@ -68,6 +68,18 @@
 
   background: $color-light-s;
   border-radius: 9px;
+
+  transition: $transition-time;
+
+  &:hover {
+    background-color: $color-light-xl;
+    cursor: pointer;
+
+    &>.card-btn {
+      background-color: $color-primary-light;
+      border-color: $color-primary-light;
+    }
+  }
 }
 
 .card-img {

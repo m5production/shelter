@@ -59,6 +59,15 @@
   padding-bottom: 30px;
   background: #FAFAFA;
   border-radius: 9px;
+  transition: 0.3s;
+}
+.slider-card:hover {
+  background-color: #FFFFFF;
+  cursor: pointer;
+}
+.slider-card:hover > .card-btn {
+  background-color: #FDDCC4;
+  border-color: #FDDCC4;
 }
 
 .card-img {

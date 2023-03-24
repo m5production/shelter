@@ -25,10 +25,14 @@
   gap: $std-gap;
 }
 
-.current-page-btn:hover{
-  background-color: unset;
+.current-page-btn {
+  background-color: $color-primary;
 
-  border-color: $color-primary;
+  &:hover {
+    background-color: $color-primary;
 
-  cursor: default;
+    border-color: $color-primary;
+
+    cursor: default;
+  }
 }
