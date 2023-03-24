@@ -1,0 +1,30 @@
+.content-friends {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 60px;
+}
+
+.slider-container {
+  max-width: unset;
+}
+
+.slider-track {
+  row-gap: 30px;
+}
+
+.section-heading {
+  max-width: 400px;
+  text-align: center;
+}
+
+.pagination-wrapper {
+  display: flex;
+  gap: 20px;
+}
+
+.current-page-btn:hover {
+  background-color: unset;
+  border-color: #F1CDB3;
+  cursor: default;
+}/*# sourceMappingURL=friends-full.css.map */

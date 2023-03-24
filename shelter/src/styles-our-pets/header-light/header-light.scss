@@ -1,0 +1,41 @@
+@import '../../styles/shared/variables.scss';
+
+/*===========
+  logo colors
+  ===========*/
+
+$logo-title-color: $color-dark-l;
+$logo-subtitle-color: $color-dark-3xl;
+
+/*=================
+  navigation colors
+  =================*/
+
+$letter-color: $color-dark-l;
+$underline-color: $color-primary;
+$hover-active-color: $color-dark-3xl;
+
+.logo-container {
+
+  .logo-title {
+    color: $logo-title-color;
+  }
+
+  .logo-subtitle {
+    color: $logo-subtitle-color;
+  }
+}
+
+.nav-list__item__link {
+
+  color: $letter-color;
+
+  &::after {
+    background-color: $underline-color;
+  }
+
+  &:hover,
+  &.active {
+    color: $hover-active-color;
+  }
+}

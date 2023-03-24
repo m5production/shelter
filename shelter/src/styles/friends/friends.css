@@ -47,6 +47,8 @@
 .slider-track {
   display: flex;
   justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
 }
 
 .slider-card {
@@ -61,4 +63,13 @@
 
 .card-img {
   width: 100%;
+}
+
+.card-name {
+  font-family: "Georgia";
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 23px;
+  letter-spacing: 0.06em;
+  color: #545454;
 }/*# sourceMappingURL=friends.css.map */

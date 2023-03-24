@@ -10,6 +10,17 @@
   justify-content: space-between;
 }
 
+.footer-text-content-wrapper {
+  max-width: 740px;
+  width: 100%;
+
+  margin-top: 16px;
+
+  display: flex;
+  gap: $std-gap;
+  justify-content: space-between;
+}
+
 .footer-contacts {
   align-self: flex-start;
   min-height: 234px;
@@ -21,8 +32,7 @@
   justify-content: space-between;
 }
 
-.contacts-container,
-.contacts-container a {
+.contacts-container :first-child {
   display: flex;
   align-items: center;
   gap: $std-gap;
@@ -59,4 +69,8 @@
   width: 22px;
 
   background-image: url('../../assets/img/footer/thumbnails/icon-marker.svg');
+}
+
+.footer-img {
+  width: 100%;
 }

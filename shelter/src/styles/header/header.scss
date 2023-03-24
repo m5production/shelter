@@ -1,5 +1,19 @@
 @import '../shared/variables.scss';
 
+/*===========
+  logo colors
+  ===========*/
+
+$logo-title-color: $color-primary;
+$logo-subtitle-color: $color-dark-3xl;
+
+/*=================
+    navigation colors
+    =================*/
+$letter-color: $color-dark-s;
+$underline-color: $color-primary;
+$hover-active-color: $color-light-s;
+
 .absolute-container {
   position: absolute;
   width: 100%;
@@ -32,7 +46,7 @@
     align-items: center;
     letter-spacing: 0.06em;
 
-    color: $color-primary;
+    color: $logo-title-color;
   }
 
   .logo-subtitle {
@@ -57,9 +71,11 @@
   justify-content: space-between;
 }
 
+.nav-list__item {
+  cursor: default;
+}
+
 .nav-list__item__link {
-  $letter-color: $color-dark-s;
-  $underline-color: $color-primary;
 
   position: relative;
   color: $letter-color;
@@ -72,7 +88,7 @@
     bottom: -7px;
     left: 50%;
     transform: translate(-50%);
-    
+
     width: 0;
     height: 3px;
 
@@ -83,10 +99,14 @@
 
   &:hover,
   &.active {
-    color: $color-light-s;
+    color: $hover-active-color;
 
     &::after {
       width: 100%;
     }
+  }
+
+  &.active {
+    cursor: default;
   }
 }

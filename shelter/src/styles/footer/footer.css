@@ -8,6 +8,15 @@
   justify-content: space-between;
 }
 
+.footer-text-content-wrapper {
+  max-width: 740px;
+  width: 100%;
+  margin-top: 16px;
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+}
+
 .footer-contacts {
   align-self: flex-start;
   min-height: 234px;
@@ -17,14 +26,12 @@
   justify-content: space-between;
 }
 
-.contacts-container,
-.contacts-container a {
+.contacts-container :first-child {
   display: flex;
   align-items: center;
   gap: 20px;
 }
-.contacts-container::before,
-.contacts-container a::before {
+.contacts-container :first-child::before {
   flex-shrink: 0;
   height: 32px;
   background-repeat: no-repeat;
@@ -47,4 +54,8 @@
   content: "";
   width: 22px;
   background-image: url("../../assets/img/footer/thumbnails/icon-marker.svg");
+}
+
+.footer-img {
+  width: 100%;
 }/*# sourceMappingURL=footer.css.map */

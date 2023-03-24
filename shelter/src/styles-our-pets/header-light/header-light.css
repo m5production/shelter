@@ -1,0 +1,22 @@
+/*===========
+  logo colors
+  ===========*/
+/*=================
+  navigation colors
+  =================*/
+.logo-container .logo-title {
+  color: #545454;
+}
+.logo-container .logo-subtitle {
+  color: #292929;
+}
+
+.nav-list__item__link {
+  color: #545454;
+}
+.nav-list__item__link::after {
+  background-color: #F1CDB3;
+}
+.nav-list__item__link:hover, .nav-list__item__link.active {
+  color: #292929;
+}/*# sourceMappingURL=header-light.css.map */

@@ -1,0 +1,34 @@
+@import '../../styles/shared/variables.scss';
+
+.content-friends {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 60px;
+}
+
+.slider-container {
+  max-width: unset;
+}
+
+.slider-track {
+  row-gap: 30px;
+}
+
+.section-heading {
+  max-width: 400px;
+  text-align: center;
+}
+
+.pagination-wrapper {
+  display: flex;
+  gap: $std-gap;
+}
+
+.current-page-btn:hover{
+  background-color: unset;
+
+  border-color: $color-primary;
+
+  cursor: default;
+}

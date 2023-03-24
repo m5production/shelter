@@ -1,11 +1,21 @@
+:root {
+  scroll-behavior: smooth;
+}
+
 body {
   min-height: 100vh;
-  scroll-behavior: smooth;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 * {
   box-sizing: border-box;
   font-family: "Arial";
+}
+
+img {
+  display: block;
 }
 
 .content-wrapper {
@@ -77,6 +87,9 @@ body {
   align-items: center;
   justify-content: center;
   font-family: "Georgia";
+  font-size: 17px;
+  line-height: 130%;
+  background-color: transparent;
   border-width: 2px;
   border-style: solid;
   border-radius: 100px;
@@ -84,8 +97,8 @@ body {
 }
 
 .btn-primary, .btn-secondary {
-  width: 207px;
-  height: 52px;
+  padding: 15px 45px;
+  letter-spacing: 0.06em;
   background: #F1CDB3;
   border-color: transparent;
 }
@@ -106,9 +119,22 @@ body {
 .btn-arrow,
 .btn-paginator,
 .btn-modal-close {
+  flex-shrink: 0;
   width: 52px;
   height: 52px;
+  padding: 0;
   border-color: #F1CDB3;
+}
+
+.inactive {
+  color: #CDCDCD;
+  border-color: #CDCDCD;
+  background-color: transparent;
+}
+.inactive:hover {
+  background-color: transparent;
+  border-color: #CDCDCD;
+  cursor: default;
 }
 
 .primary-color-text {

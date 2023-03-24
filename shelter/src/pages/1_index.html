@@ -17,18 +17,23 @@
 
       <div class="content-wrapper">
 
-        <div class="logo-container">
-          <div class="logo-title">Cozy House</div>
-          <div class="logo-subtitle">Shelter for pets in Boston</div>
-        </div>
+        <a href="#">
+          <div class="logo-container">
+            <div class="logo-title">Cozy House</div>
+            <div class="logo-subtitle">Shelter for pets in Boston</div>
+          </div>
+        </a>
 
         <nav class="main-nav">
           <ul class="nav-list">
             <li class="nav-list__item"><a href="#" class="paragraph-l nav-list__item__link active">About the shelter</a>
             </li>
-            <li class="nav-list__item"><a href="#" class="paragraph-l nav-list__item__link">Our pets</a></li>
-            <li class="nav-list__item"><a href="#" class="paragraph-l nav-list__item__link">Help the shelter</a></li>
-            <li class="nav-list__item"><a href="#" class="paragraph-l nav-list__item__link">Contacts</a></li>
+            <li class="nav-list__item"><a href="./2_index.html" class="paragraph-l nav-list__item__link">Our pets</a>
+            </li>
+            <li class="nav-list__item"><a href="#help-section" class="paragraph-l nav-list__item__link">Help the
+                shelter</a></li>
+            <li class="nav-list__item"><a href="#footer-contacts" class="paragraph-l nav-list__item__link">Contacts</a>
+            </li>
           </ul>
         </nav>
       </div>
@@ -46,8 +51,9 @@
             and open
             heart. He or she will love you more than anybody else in the world, you will see!</p>
 
-          <button class="btn btn-primary">Make a friend</button>
+          <a href="#friends-section" class="btn btn-primary">Make a friend</a>
         </div>
+
         <img class="hero-img" src="../assets/img/1_hero/start-screen-puppy.png"
           alt="White-brown dog glancing at something above it.">
       </section>
@@ -80,7 +86,7 @@
     </section>
 
 
-    <section class="friends-section">
+    <section class="friends-section" id="friends-section">
       <div class="content-wrapper friends-content">
 
         <h3 class="section-heading h-3 friends-heading">Our friends who are&nbsp;looking for a house</h3>
@@ -92,20 +98,20 @@
           <div class="slider-container">
             <ul class="slider-track">
               <li class="slider-card">
-                <img src="../assets/img/3_friends/pets-katrine.png" alt="Grey cat with yellow eyes." class="card-img">
+                <img src="../assets/img/slider-friends/pets-katrine.png" alt="Grey cat with yellow eyes." class="card-img">
                 <h4 class="card-name">Katrine</h4>
                 <button class="btn btn-secondary card-btn">Learn more</button>
               </li>
 
               <li class="slider-card">
-                <img src="../assets/img/3_friends/pets-jennifer.png" alt="White cute puppy sitting on the floor."
+                <img src="../assets/img/slider-friends/pets-jennifer.png" alt="White cute puppy sitting on the floor."
                   class="card-img">
                 <h4 class="card-name">Jennifer</h4>
                 <button class="btn btn-secondary card-btn">Learn more</button>
               </li>
 
               <li class="slider-card">
-                <img src="../assets/img/3_friends/pets-woody.png" alt="Yellowish dog lying on the floor."
+                <img src="../assets/img/slider-friends/pets-woody.png" alt="Yellowish dog lying on the floor."
                   class="card-img">
                 <h4 class="card-name">Woody</h4>
                 <button class="btn btn-secondary card-btn">Learn more </button>
@@ -116,12 +122,12 @@
           <div class="btn-arrow slide-next-btn"></div>
         </div>
 
-        <button class="btn btn-primary show-more-btn">Get to know the rest</button>
+        <a class="btn btn-primary show-more-btn" href="./2_index.html">Get to know the rest</a>
       </div>
     </section>
 
 
-    <section class="help-section">
+    <section class="help-section" id="help-section">
 
       <div class="content-wrapper help-section-content">
 
@@ -191,9 +197,9 @@
 
           <p class="subheading h-5">Name of the bank / Type of bank account</p>
 
-          <div class="bank-card-number-container">
+          <a class="bank-card-number-container" href="#">
             <div class="bank-card-number h-4">8380 2880 8028 8791 7435</div>
-          </div>
+          </a>
 
           <p class="bank-card-disclaimer paragraph-s">Legal information and lorem ipsum dolor sit amet, consectetur
             adipiscing elit.
@@ -208,35 +214,40 @@
 
     <div class="content-wrapper footer-content">
 
-      <div class="footer-contacts">
+      <div class="footer-text-content-wrapper">
 
-        <h3 class="h-3 light-color-text">For questions and suggestions</h3>
+        <div class="footer-contacts" id="footer-contacts">
 
-        <div class="contacts-container">
-          <a class="h-4 primary-color-text shelter-email" href="mailto:email@shelter.com">email@shelter.com</a>
+          <h3 class="h-3 light-color-text">For questions and suggestions</h3>
+
+          <div class="contacts-container">
+            <a class="h-4 primary-color-text shelter-email" href="mailto:email@shelter.com">email@shelter.com</a>
+          </div>
+
+          <div class="contacts-container">
+            <a class="h-4 primary-color-text shelter-phone" href="tel:+136745677554">+13 674 567 75 54</a>
+          </div>
         </div>
 
-        <div class="contacts-container">
-          <a class="h-4 primary-color-text shelter-phone" href="tel:+136745677554">+13 674 567 75 54</a>
+        <div class="footer-contacts">
+
+          <h3 class="h-3 light-color-text">We are waiting for your visit</h3>
+
+          <div class="contacts-container">
+
+            <a class="h-4 primary-color-text address" href="https://goo.gl/maps/w4H6oZ3HPfLiYpUq6" target="_blank">1 Central Street, Boston (entrance from the store)</a>
+          </div>
+
+          <div class="contacts-container">
+
+            <a class="h-4 primary-color-text address" href="https://goo.gl/maps/ucvS7e1TwYxCLJQUA" target="_blank">18 South Park, London</a>
+          </div>
         </div>
       </div>
 
-      <div class="footer-contacts">
-
-        <h3 class="h-3 light-color-text">We are waiting for your visit</h3>
-
-        <div class="contacts-container address">
-
-          <div class="h-4 primary-color-text">1 Central Street, Boston (entrance from the store)</div>
-        </div>
-
-        <div class="contacts-container address">
-
-          <div class="h-4 primary-color-text">18 South Park, London</div>
-        </div>
+      <div class="img-wrapper">
+        <img class="footer-img" src="../assets/img/footer/footer-puppy.png" alt="Cute brown puppy licking camera.">
       </div>
-
-      <img class="footer-img" src="../assets/img/footer/footer-puppy.png" alt="Cute brown puppy licking camera.">
     </div>
   </footer>
 

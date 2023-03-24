@@ -1,3 +1,9 @@
+/*===========
+  logo colors
+  ===========*/
+/*=================
+    navigation colors
+    =================*/
 .absolute-container {
   position: absolute;
   width: 100%;
@@ -49,6 +55,10 @@
   justify-content: space-between;
 }
 
+.nav-list__item {
+  cursor: default;
+}
+
 .nav-list__item__link {
   position: relative;
   color: #CDCDCD;
@@ -70,4 +80,7 @@
 }
 .nav-list__item__link:hover::after, .nav-list__item__link.active::after {
   width: 100%;
+}
+.nav-list__item__link.active {
+  cursor: default;
 }/*# sourceMappingURL=header.css.map */

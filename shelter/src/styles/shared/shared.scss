@@ -1,14 +1,25 @@
 @import 'variables.scss';
 
-body{
-  min-height: 100vh;
+:root {
   scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 * {
   box-sizing: border-box;
 
   font-family: $arial-font;
+}
+
+img {
+  display: block;
 }
 
 .content-wrapper {
@@ -88,6 +99,10 @@ body{
   justify-content: center;
 
   font-family: $georgia-font;
+  font-size: 17px;
+  line-height: 130%;
+
+  background-color: transparent;
 
   border-width: 2px;
   border-style: solid;
@@ -97,11 +112,9 @@ body{
 }
 
 .btn-primary {
-  width: 207px;
-  height: 52px;
+  padding: 15px 45px;
 
-  // padding: 15px 45px;
-  // gap: 10px;
+  letter-spacing: 0.06em;
 
   background: $color-primary;
   border-color: transparent;
@@ -125,9 +138,26 @@ body{
 .btn-modal-close {
   @extend .btn;
 
+  flex-shrink: 0;
+
   width: 52px;
   height: 52px;
+
+  padding: 0;
+
   border-color: $color-primary;
+}
+
+.inactive {
+  color: $color-dark-s;
+  border-color: $color-dark-s;
+  background-color: transparent;
+
+  &:hover {
+    background-color: transparent;
+    border-color: $color-dark-s;
+    cursor: default;
+  }
 }
 
 .primary-color-text {

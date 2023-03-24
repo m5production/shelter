@@ -16,6 +16,7 @@
   display: flex;
   flex-direction: column;
   gap: calc($std-gap * 2);
+  align-items: flex-start;
 }
 
 .main-heading {
