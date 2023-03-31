@@ -26,7 +26,12 @@ img {
   box-sizing: content-box;
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 $std-gap;
+  padding: 0 calc($std-gap + 10px);
+}
+
+.outer-section-wrapper {
+  padding-top: 80px;
+  padding-bottom: 100px;
 }
 
 .h-2 {
@@ -166,4 +171,36 @@ img {
 
 .light-color-text {
   color: $color-light-xl;
+}
+
+@media (max-width: $media-query-nav-shift){
+    .content-wrapper {
+    padding-left: calc($std-gap/2);
+    padding-right: calc($std-gap/2);
+  }
+}
+
+@media (max-width: 400px) {
+  .h-2 {
+    font-size: 25px;
+
+    letter-spacing: 0.06em;
+  }
+
+  .h-3 {
+    font-size: 25px;
+  }
+
+  .h-4 {
+    font-size: 15px;
+  }
+
+  .h-5 {
+    letter-spacing: unset;
+  }
+
+  .outer-section-wrapper {
+    padding-top: 42px;
+    padding-bottom: 42px;
+  }
 }

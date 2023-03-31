@@ -1,9 +1,6 @@
 @import '../shared/variables.scss';
 
 .friends-section {
-  padding-top: 80px;
-  padding-bottom: 100px;
-
   background-color: $color-light-l;
 }
 
@@ -40,6 +37,10 @@
   @extend .slide-prev-btn;
 
   transform: scale(-1);
+}
+
+.slider-btn-mobile-wrapper {
+  display: none;
 }
 
 /*=============
@@ -94,4 +95,55 @@
   letter-spacing: 0.06em;
 
   color: $color-dark-l;
+}
+
+@media (max-width: 768px) {
+  .slider-card:nth-child(n + 3){
+    display: none;
+  }
+
+  .slider-track {
+    column-gap: 40px;
+    justify-content: center;
+  }
+
+  .friends-slider {
+    gap: 10px;
+  }
+}
+
+@media (max-width: 400px) {
+  .friends-content {
+    gap: 40px;
+  }
+
+  .slider-card:nth-child(n + 2){
+    display: none;
+  }
+
+  .friends-slider {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .slider-btn-mobile-wrapper {
+    display: flex;
+    gap: 80px;
+  }
+
+  .slide-next-btn {
+    display: none;
+
+    &.mobile-btn {
+      display: block;
+    }
+  }
+
+  .slide-prev-btn {
+    display: none;
+
+    &.mobile-btn {
+      display: block;
+    }
+  }
 }

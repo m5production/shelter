@@ -2,6 +2,7 @@
 @import '../styles/shared/normalize.css';
 @import '../styles/shared/shared.css';
 @import '../styles/header/header.css';
+@import '../styles/header/burger-menu/burger-menu-btn.css';
 @import './header-light/header-light.css';
 @import '../styles/friends/friends.css';
 @import '../styles-our-pets/friends-full/friends-full.css';

@@ -1,11 +1,10 @@
 .donation-section {
-  padding-top: 80px;
-  padding-bottom: 100px;
   background-color: #F6F6F6;
 }
 
 .donation-content {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   gap: 30px;
@@ -35,4 +34,28 @@
   background-image: url("../../assets/img/5_donate/credit-card.svg");
   background-repeat: no-repeat;
   background-size: contain;
+}
+
+@media (max-width: 768px) {
+  .donation-content {
+    gap: 60px;
+  }
+  .donation-text-wrapper {
+    order: -1;
+  }
+  .donation-img {
+    width: clamp(260px, 65.75vw, 505px);
+  }
+}
+@media (max-width: 400px) {
+  .donation-content {
+    text-align: center;
+    gap: 42px;
+  }
+  .bank-card-number-container {
+    align-self: center;
+  }
+  .bank-card-disclaimer {
+    text-align: justify;
+  }
 }/*# sourceMappingURL=donation.css.map */

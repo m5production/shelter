@@ -52,7 +52,9 @@
 
 .nav-list {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
+  row-gap: 20px;
 }
 
 .nav-list__item {
@@ -83,4 +85,13 @@
 }
 .nav-list__item__link.active {
   cursor: default;
+}
+
+@media (max-width: 680px) {
+  .main-header .content-wrapper {
+    max-width: 280px;
+  }
+  .main-nav {
+    display: none;
+  }
 }/*# sourceMappingURL=header.css.map */
