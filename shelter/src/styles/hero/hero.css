@@ -5,10 +5,12 @@
 
 .hero-section {
   display: flex;
+  flex-wrap: wrap;
   gap: 40px;
 }
 
 .text-wrapper {
+  max-width: 460px;
   padding-top: 163px;
   display: flex;
   flex-direction: column;
@@ -25,5 +27,35 @@
 }
 
 .hero-img {
-  width: 58.16%;
+  width: clamp(569px, 54.53vw, 698px);
+  height: auto;
+  margin-left: auto;
+}
+
+@media (max-width: 768px) {
+  .hero-wrapper {
+    padding-top: 150px;
+  }
+  .hero-section {
+    gap: 100px;
+  }
+  .text-wrapper {
+    padding-top: 0;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .text-wrapper .btn-primary {
+    align-self: center;
+  }
+  .hero-img {
+    width: clamp(260px, 74vw, 569px);
+  }
+}
+@media (max-width: 400px) {
+  .main-heading {
+    text-align: center;
+  }
+  .hero-text {
+    text-align: center;
+  }
 }/*# sourceMappingURL=hero.css.map */

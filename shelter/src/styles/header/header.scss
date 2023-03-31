@@ -68,7 +68,9 @@ $hover-active-color: $color-light-s;
 
 .nav-list {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
+  row-gap: 20px;
 }
 
 .nav-list__item {
@@ -108,5 +110,15 @@ $hover-active-color: $color-light-s;
 
   &.active {
     cursor: default;
+  }
+}
+
+@media (max-width: $media-query-nav-shift) {
+  .main-header .content-wrapper {
+    max-width: 280px;
+  }
+  
+  .main-nav {
+    display: none;
   }
 }

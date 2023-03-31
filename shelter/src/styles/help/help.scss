@@ -1,7 +1,4 @@
-.help-section {
-  padding-top: 80px;
-  padding-bottom: 100px;
-}
+@import '../shared/variables.scss';
 
 .help-section-content {
   display: flex;
@@ -23,6 +20,10 @@
   row-gap: 55px;
 }
 
+.options-item-text {
+  font-family: $georgia-font;
+}
+
 .help-item-content-wrapper {
   display: flex;
   flex-direction: column;
@@ -35,6 +36,7 @@
     height: 60px;
     background-repeat: no-repeat;
     background-position: center;
+    background-size: contain;
   }
 
   &.food::before {
@@ -72,4 +74,40 @@
   &.homes::before {
     background-image: url('../../assets/img/4_help/icon-sleeping-area.svg');
   }
+}
+
+@media (max-width: 768px) {
+  .help-options {
+    column-gap: 60px;
+  }
+
+  .help-options__item {
+    flex-basis: 170px;
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 420px) {
+  .help-section-content {
+    gap: 42px;
+  }
+
+  .help-options {
+    gap: 30px;
+    justify-content: flex-start;
+  }
+
+  .help-options__item {
+    font-size: 15px;
+    flex-basis: 130px;
+  }
+
+  .help-item-content-wrapper {
+    gap: 20px;
+    
+    &::before {
+    width: 50px;
+    height: 50px;
+  }}
 }
