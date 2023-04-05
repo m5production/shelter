@@ -19,4 +19,13 @@
 }
 .nav-list__item__link:hover, .nav-list__item__link.active {
   color: #292929;
+}
+
+@media (max-width: 768px) {
+  .nav-list__item__link {
+    color: #CDCDCD;
+  }
+  .nav-list__item__link:hover, .nav-list__item__link.active {
+    color: #FAFAFA;
+  }
 }/*# sourceMappingURL=header-light.css.map */

@@ -115,10 +115,42 @@ $hover-active-color: $color-light-s;
 
 @media (max-width: $media-query-nav-shift) {
   .main-header .content-wrapper {
-    max-width: 280px;
+    padding-left: 30px;
+    padding-right: 30px;
   }
-  
+
   .main-nav {
-    display: none;
+    max-width: 320px;
+    height: 100%;
+    
+    position: fixed;
+    top: 0;
+    right: -100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    padding: 20px;
+
+    background-color: $color-dark-3xl;
+
+    z-index: 1;
+
+    transition: 0.3s;
+  }
+
+  .nav-list {
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+  }
+
+  .nav-list__item__link {
+    font-size: 32px;
+  }
+
+  .main-nav--active {
+    right: 0;
   }
 }

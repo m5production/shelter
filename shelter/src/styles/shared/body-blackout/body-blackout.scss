@@ -1,0 +1,23 @@
+.body-blackout {
+  position: fixed;
+
+  width: 100vw;
+  height: 100vh;
+
+  background-color: rgba(41, 41, 41, 0.6);
+
+  opacity: 0;
+
+  animation-name: make-visible;
+  animation-duration: 0.3s;
+}
+
+@keyframes make-visible{
+  from{
+    opacity: 0;
+  }
+
+  to{
+    opacity: 1;
+  }
+}

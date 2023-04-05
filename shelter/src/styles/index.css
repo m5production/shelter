@@ -1,6 +1,7 @@
 @import './shared/my-reset.css';
 @import './shared/normalize.css';
 @import './shared/shared.css';
+@import './shared/body-blackout/body-blackout.css';
 @import './header/header.css';
 @import './header/burger-menu/burger-menu-btn.css';
 @import './hero/hero.css';

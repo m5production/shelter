@@ -150,7 +150,7 @@ img {
   color: #FFFFFF;
 }
 
-@media (max-width: 680px) {
+@media (max-width: 768px) {
   .content-wrapper {
     padding-left: 10px;
     padding-right: 10px;
