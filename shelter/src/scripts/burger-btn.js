@@ -1,7 +1,8 @@
 export class BurgerMenuBtn{
-  constructor(){
+  constructor(handleClick){
     this.btn = document.querySelector('.burger-menu-btn');
     this.isActive = false;
+    this.btn.onclick = (e) => console.log(e);
 
     this.activate.bind(this);
     this.deactivate.bind(this);

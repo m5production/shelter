@@ -101,31 +101,19 @@
 
           <div class="slider-container">
             <ul class="slider-track">
-              <li class="slider-card">
-                <img src="../assets/img/slider-friends/pets-katrine.png" alt="Grey cat with yellow eyes."
-                  class="card-img">
-                <h4 class="card-name">Katrine</h4>
-                <button class="btn btn-secondary card-btn">Learn more</button>
-              </li>
-
-              <li class="slider-card">
-                <img src="../assets/img/slider-friends/pets-jennifer.png" alt="White cute puppy sitting on the floor."
-                  class="card-img">
-                <h4 class="card-name">Jennifer</h4>
-                <button class="btn btn-secondary card-btn">Learn more</button>
-              </li>
-
-              <li class="slider-card">
-                <img src="../assets/img/slider-friends/pets-woody.png" alt="Yellowish dog lying on the floor."
-                  class="card-img">
-                <h4 class="card-name">Woody</h4>
-                <button class="btn btn-secondary card-btn">Learn more </button>
-              </li>
+              <template id="pet-card-template">
+                <li class="slider-card">
+                  <img src="../assets/img/slider-friends/pets-katrine.png" alt="Grey cat with yellow eyes."
+                    class="card-img">
+                  <h4 class="card-name">PetName</h4>
+                  <button class="btn btn-secondary card-btn">Learn more</button>
+                </li>
+              </template>
             </ul>
           </div>
 
           <div class="btn-arrow slide-next-btn"></div>
-          
+
           <div class="slider-btn-mobile-wrapper">
             <div class="btn-arrow slide-prev-btn mobile-btn"></div>
             <div class="btn-arrow slide-next-btn mobile-btn"></div>

@@ -1,7 +1,8 @@
 export class BurgerNav{
-  constructor(){
+  constructor(handleClick){
     this.nav = document.querySelector('.main-nav');
     this.isNavShown = false;
+    this.nav.onclick = handleClick;
 
     this.show.bind(this);
     this.hide.bind(this);

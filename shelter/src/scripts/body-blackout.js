@@ -1,10 +1,14 @@
 export class BodyBlackout {
-  constructor() {
+  constructor(handleClick) {
+    this.isShown = false;
+    
     this.blackout = document.createElement('div');
     this.blackout.className = 'body-blackout';
-    this.isShown = false;
+    this.blackout.addEventListener('click', handleClick);
+    
     this.bStyle = document.body.style;
-
+    
+    this.scrollWidth = window.innerWidth - document.documentElement.clientWidth;
     this.absoluteElements = document.querySelectorAll('.absolute-container');
 
 
@@ -15,9 +19,9 @@ export class BodyBlackout {
   show() {
     this.isShown = !this.isShown;
     document.body.append(this.blackout);
-    this.bStyle.paddingInlineEnd = '17px';
+    this.bStyle.paddingInlineEnd = `${this.scrollWidth}px`;
     this.absoluteElements.forEach(elem => {
-      elem.style.paddingInlineEnd = '17px';
+      elem.style.paddingInlineEnd = `${this.scrollWidth}px`;
     });
     this.bStyle.overflow = 'hidden';
     this.blackout.addEventListener('animationend', () => {
