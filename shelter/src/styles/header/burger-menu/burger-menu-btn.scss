@@ -28,5 +28,13 @@
 @media (max-width: $media-query-nav-shift) {
   .burger-menu-btn {
     display: block;
+    
+    transition: transform 0.3s;
+    
+    z-index: 2;
+  }
+
+  .burger-menu-btn--active {
+    transform: rotate(90deg)
   }
 }

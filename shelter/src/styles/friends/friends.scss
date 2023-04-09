@@ -1,4 +1,5 @@
 @import '../shared/variables.scss';
+@import './slider-track/slider-track.scss';
 
 .friends-section {
   background-color: $color-light-l;
@@ -22,9 +23,11 @@
 
 .friends-slider {
   width: 100%;
+  
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 10px;
 }
 
 .slide-prev-btn {
@@ -47,65 +50,7 @@
   slider itself
   =============*/
 
-.slider-container {
-  max-width: 990px;
-  width: 100%;
-}
-
-.slider-track {
-  display: flex;
-  justify-content: space-between;
-  gap: $std-gap;
-  flex-wrap: wrap;
-}
-
-.slider-card {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: calc($std-gap * 1.5);
-
-  padding-bottom: calc($std-gap * 1.5);
-
-  background: $color-light-s;
-  border-radius: 9px;
-
-  transition: $transition-time;
-
-  &:hover {
-    background-color: $color-light-xl;
-    cursor: pointer;
-
-    &>.card-btn {
-      background-color: $color-primary-light;
-      border-color: $color-primary-light;
-    }
-  }
-}
-
-.card-img {
-  width: 100%;
-}
-
-.card-name {
-  font-family: 'Georgia';
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 23px;
-  letter-spacing: 0.06em;
-
-  color: $color-dark-l;
-}
-
 @media (max-width: 768px) {
-  .slider-card:nth-child(n + 3){
-    display: none;
-  }
-
-  .slider-track {
-    column-gap: 40px;
-    justify-content: center;
-  }
 
   .friends-slider {
     gap: 10px;
@@ -117,10 +62,6 @@
     gap: 40px;
   }
 
-  .slider-card:nth-child(n + 2){
-    display: none;
-  }
-
   .friends-slider {
     flex-direction: column;
     gap: 20px;
@@ -130,6 +71,8 @@
     display: flex;
     gap: 80px;
   }
+
+  
 
   .slide-next-btn {
     display: none;

@@ -174,4 +174,13 @@ img {
     padding-top: 42px;
     padding-bottom: 42px;
   }
-}/*# sourceMappingURL=shared.css.map */
+}
+.body-blackout {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(41, 41, 41, 0.6);
+  opacity: 0;
+  animation-name: fromOpaqueToVisible;
+  animation-duration: 0.3s;
+}/*# sourceMappingURL=body-blackout.css.map */

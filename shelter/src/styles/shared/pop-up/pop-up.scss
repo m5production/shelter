@@ -1,0 +1,109 @@
+@import '../variables.scss';
+@import '../shared.scss';
+
+.popup {
+  width: clamp(630px, 82vw, 900px);
+
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  display: flex;
+  flex-wrap: wrap;
+
+  background-color: $color-light-s;
+  border-radius: 9px;
+
+  opacity: 1;
+  z-index: 2;
+
+  animation: fromOpaqueToVisible;
+  animation-duration: $transition-time;
+}
+
+.popup-img-wrapper {
+  width: clamp(270px, calc(5/9 * 100%), 500px);
+  padding-bottom: calc(5/9 * 100%);
+  background-image: url('../../../assets/img/slider-friends/pets-charly.png');
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  flex-shrink: 0;
+
+  border-radius: 9px;
+}
+
+.popup-text-wrapper {
+  width: clamp(260px, 39%, 350px);
+
+  display: flex;
+  flex-direction: column;
+  gap: clamp(20px, 3.125vw, 40px);
+
+  padding: 20px;
+}
+
+.popup-header {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.pet-specs {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 20px;
+
+  list-style: disc;
+
+  li::marker {
+    color: $color-primary;
+  }
+}
+
+.popup-close-btn {
+  width: 52px;
+  height: 52px;
+  
+  position: absolute;
+  right: -30px;
+  top: -60px;
+
+  background-image: url('../../../assets/img/popup/close-cross.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+
+  border: 2px solid $color-primary;
+  border-radius: 100px;
+  transition: all $transition-time;
+
+  &:hover {
+    cursor: pointer;
+    background-color: $color-primary;
+    transform: rotate(135deg);
+  }
+}
+
+@media (max-width: 768px) {
+  .pet-specs {
+    gap: 5px;
+  }
+}
+
+@media (max-width: 767px) {
+  .popup {
+    width: clamp(240px, 75vw, 630px);
+
+    justify-content: center;
+  }
+
+  .popup-img-wrapper {
+    display: none;
+  }
+
+  .popup-text-wrapper {
+    width: unset;
+  }
+}

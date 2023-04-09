@@ -39,3 +39,16 @@ $hover-active-color: $color-dark-3xl;
     color: $hover-active-color;
   }
 }
+
+@media (max-width: $media-query-nav-shift){
+  
+  .nav-list__item__link {
+  
+    color: $color-dark-s;
+  
+    &:hover,
+    &.active {
+      color: $color-light-s;
+    }
+  }
+}

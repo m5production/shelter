@@ -51,57 +51,18 @@
 
         <h3 class="h-3 section-heading">Our friends who are&nbsp;looking for a house</h3>
 
-        <div class="slider-container">
+        <div class="slider-container pagination">
 
-          <ul class="slider-track">
+          <ul class="slider-track pagination">
             
-            <li class="slider-card slider-large">
-              <img src="../assets/img/slider-friends/pets-katrine.png" alt="Grey cat with yellow eyes." class="card-img">
-              <h4 class="card-name">Katrine</h4>
-              <button class="btn btn-secondary card-btn">Learn more</button>
-            </li>
-
-            <li class="slider-card slider-large">
-              <img src="../assets/img/slider-friends/pets-jennifer.png" alt="Grey cat with yellow eyes." class="card-img">
-              <h4 class="card-name">Jennifer</h4>
-              <button class="btn btn-secondary card-btn">Learn more</button>
-            </li>
-
-            <li class="slider-card slider-large">
-              <img src="../assets/img/slider-friends/pets-woody.png" alt="Grey cat with yellow eyes." class="card-img">
-              <h4 class="card-name">Woody</h4>
-              <button class="btn btn-secondary card-btn">Learn more</button>
-            </li>
-
-            <li class="slider-card slider-large">
-              <img src="../assets/img/slider-friends/pets-sophia.png" alt="Grey cat with yellow eyes." class="card-img">
-              <h4 class="card-name">Sophia</h4>
-              <button class="btn btn-secondary card-btn">Learn more</button>
-            </li>
-
-            <li class="slider-card slider-large">
-              <img src="../assets/img/slider-friends/pets-timmy.png" alt="Grey cat with yellow eyes." class="card-img">
-              <h4 class="card-name">Timmy</h4>
-              <button class="btn btn-secondary card-btn">Learn more</button>
-            </li>
-
-            <li class="slider-card slider-large">
-              <img src="../assets/img/slider-friends/pets-charly.png" alt="Grey cat with yellow eyes." class="card-img">
-              <h4 class="card-name">Charly</h4>
-              <button class="btn btn-secondary card-btn">Learn more</button>
-            </li>
-
-            <li class="slider-card slider-large">
-              <img src="../assets/img/slider-friends/pets-scarlet.png" alt="Grey cat with yellow eyes." class="card-img">
-              <h4 class="card-name">Scarlett</h4>
-              <button class="btn btn-secondary card-btn">Learn more</button>
-            </li>
-
-            <li class="slider-card slider-large">
-              <img src="../assets/img/slider-friends/pets-freddie.png" alt="Grey cat with yellow eyes." class="card-img">
-              <h4 class="card-name">Freddie</h4>
-              <button class="btn btn-secondary card-btn">Learn more</button>
-            </li>
+            <template id="pet-card-template">
+              <div class="slider-card">
+                <img src="../assets/img/slider-friends/pets-katrine.png" alt="Grey cat with yellow eyes."
+                  class="card-img">
+                <h4 class="card-name">PetName</h4>
+                <button class="btn btn-secondary card-btn">Learn more</button>
+              </div>
+            </template>
           </ul>
         </div>
 
@@ -158,6 +119,7 @@
       </div>
     </div>
   </footer>
+  <script type="module" src="../index-our-pets.js"></script>
 </body>
 
 </html>

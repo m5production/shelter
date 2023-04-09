@@ -1,6 +1,8 @@
 @import '../styles/shared/my-reset.css';
 @import '../styles/shared/normalize.css';
 @import '../styles/shared/shared.css';
+@import '../styles/shared/pop-up/pop-up.css';
+@import '../styles/shared/body-blackout/body-blackout.css';
 @import '../styles/header/header.css';
 @import '../styles/header/burger-menu/burger-menu-btn.css';
 @import './header-light/header-light.css';
