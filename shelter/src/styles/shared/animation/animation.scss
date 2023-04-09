@@ -1,0 +1,27 @@
+@keyframes fromRight{
+  from{
+    left: -100%;
+  }
+  to{
+    left: -200%;
+  }
+}
+
+@keyframes fromLeft {
+  from{
+    left: -100%;
+  }
+  to {
+    left: 0;
+  }
+}
+
+@keyframes fromOpaqueToVisible{
+  from{
+    opacity: 0;
+  }
+
+  to{
+    opacity: 1;
+  }
+}

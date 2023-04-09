@@ -1,0 +1,101 @@
+@import '../../shared/variables.scss';
+@import '../../shared/animation/animation.scss';
+
+.slider-container {
+  position: relative;
+
+  max-width: 990px;
+  width: 100%;
+
+  overflow: hidden;
+}
+
+.slider-track {
+  position: relative;
+  left: -100%;
+  
+  width: 300%;
+  
+  display: flex;
+  justify-content: space-between;
+
+  overflow: hidden;
+  
+  animation-duration: $transition-time;
+}
+
+.from-right{
+  animation-name: fromRight;
+}
+
+.from-left{
+  animation-name: fromLeft;
+}
+
+.slider-pane {
+  width: calc(100% / 3);
+
+  padding: calc($std-gap / 2);
+
+  display: flex;
+  justify-content: space-around;
+  gap: $std-gap;
+}
+
+.slider-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: calc($std-gap * 1.5);
+
+  padding-bottom: calc($std-gap * 1.5);
+
+  background: $color-light-s;
+  border-radius: 9px;
+
+  transition: $transition-time;
+
+  &:hover {
+    background-color: $color-light-xl;
+    cursor: pointer;
+
+    &>.card-btn {
+      background-color: $color-primary-light;
+      border-color: $color-primary-light;
+    }
+  }
+}
+
+.card-img {
+  width: 100%;
+}
+
+.card-name {
+  font-family: 'Georgia';
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 23px;
+  letter-spacing: 0.06em;
+
+  color: $color-dark-l;
+}
+
+@media (max-width: 1034px){
+    .slider-card:nth-child(n+3) {
+      display: none;
+    }
+}
+
+@media (max-width: 570px){
+  .slider-card:nth-child(n+2) {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+
+  .slider-container {
+    max-width: 580px;
+  }
+}
+

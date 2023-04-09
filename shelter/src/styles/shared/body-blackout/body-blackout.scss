@@ -1,3 +1,6 @@
+@import '../shared.scss';
+@import '../variables.scss';
+
 .body-blackout {
   position: fixed;
 
@@ -8,16 +11,6 @@
 
   opacity: 0;
 
-  animation-name: make-visible;
-  animation-duration: 0.3s;
-}
-
-@keyframes make-visible{
-  from{
-    opacity: 0;
-  }
-
-  to{
-    opacity: 1;
-  }
+  animation-name: fromOpaqueToVisible;
+  animation-duration: $transition-time;
 }

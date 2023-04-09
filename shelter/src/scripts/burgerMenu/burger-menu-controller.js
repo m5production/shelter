@@ -1,5 +1,5 @@
 import { BurgerMenuBtn } from "./burger-btn.js";
-import { BodyBlackout } from "./body-blackout.js";
+import { BodyBlackout } from "../shared/body-blackout.js";
 import { BurgerNav } from "./burger-nav.js";
 
 const burgerBtn = new BurgerMenuBtn(handleClick);

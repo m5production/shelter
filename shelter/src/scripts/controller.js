@@ -1,2 +1,2 @@
-import './burger-menu-controller.js';
-import './cards-list-controller.js';
+import './burgerMenu/burger-menu-controller.js';
+import './pets-slider/pets-slider-controller.js';
