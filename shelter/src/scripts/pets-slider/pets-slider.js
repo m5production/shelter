@@ -23,15 +23,15 @@ export class PetsSlider {
   }
 
   setNewCardNumbers() {
-    const windowWidth = document.body.clientWidth
+    // const windowWidth = document.body.clientWidth
 
     const numberOfCardsOnPane = 3;
-      // windowWidth >= 1034 ? 3 
-      //   : windowWidth >= 570 ? 2
-      //     : 1;
-      /*
-      не успел придумать динамическую генерацию при изменении размеров экрана без перезагрузки страницы
-      */
+    // windowWidth >= 1034 ? 3 
+    //   : windowWidth >= 570 ? 2
+    //     : 1;
+    /*
+    не успел придумать динамическую генерацию при изменении размеров экрана без перезагрузки страницы
+    */
 
     const nextCaradsSet = this.slideDirection.changed
       ? this.previousShownCards
@@ -63,13 +63,17 @@ export class PetsSlider {
   }
 
   activateSliderBtns() {
-    const slidePrevBtn = document.querySelector('.slide-prev-btn');
-    slidePrevBtn.value = 'left'; //соответствует названию класса с аниацией в css
-    const slideNextBtn = document.querySelector('.slide-next-btn');
-    slideNextBtn.value = 'right';
-
-    slidePrevBtn.onclick = (e) => this.handleBtnClick(e);
-    slideNextBtn.onclick = (e) => this.handleBtnClick(e);
+    const slidePrevBtns = Array.from(document.querySelectorAll('.slide-prev-btn'));
+    slidePrevBtns.forEach(btn => {
+      btn.value = 'left'; //соответствует названию класса с аниацией в css
+      btn.onclick = (e) => this.handleBtnClick(e);
+    });
+    
+    const slideNextBtns = Array.from(document.querySelectorAll('.slide-next-btn'));
+    slideNextBtns.forEach(btn => {
+      btn.value = 'right'; //соответствует названию класса с аниацией в css
+      btn.onclick = (e) => this.handleBtnClick(e);
+    });
   }
 
   handleBtnClick(e) {
