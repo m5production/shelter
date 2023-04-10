@@ -1,7 +1,7 @@
-import { PetsListData } from "../pet-card-list/pets-list.js";
 import petsListData from "../../assets/data/pets.json" assert {type: 'json'};
+import { PetsListData } from "../shared/pets-list.js";
 import { PetsSlider } from "./pets-slider.js";
-import { PopUpController } from "../pet-card-list/popup-controller.js";
+import { PopUpController } from "../shared/popup/popup-controller.js";
 
 const petsList = new PetsListData(petsListData);
 

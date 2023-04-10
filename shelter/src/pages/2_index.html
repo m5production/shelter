@@ -51,24 +51,24 @@
 
         <h3 class="h-3 section-heading">Our friends who are&nbsp;looking for a house</h3>
 
-        <div class="slider-container pagination">
+        <div class="slider-container pagination-container">
 
-          <ul class="slider-track pagination">
-            
-            <template id="pet-card-template">
-              <div class="slider-card">
-                <img src="../assets/img/slider-friends/pets-katrine.png" alt="Grey cat with yellow eyes."
-                  class="card-img">
-                <h4 class="card-name">PetName</h4>
-                <button class="btn btn-secondary card-btn">Learn more</button>
-              </div>
-            </template>
+          <ul class="slider-track pagination-track">
           </ul>
+
+          <template id="pet-card-template">
+            <div class="slider-card">
+              <img src="../assets/img/slider-friends/pets-katrine.png" alt="Grey cat with yellow eyes."
+                class="card-img">
+              <h4 class="card-name">PetName</h4>
+              <button class="btn btn-secondary card-btn">Learn more</button>
+            </div>
+          </template>
         </div>
 
-        <div class="pagination-wrapper">
-          <button type="button" class="h-4 btn-paginator inactive" id="first-page-btn">&lt;&lt;</button>
-          <button type="button" class="h-4 btn-paginator inactive" id="prev-page-btn">&lt;</button>
+        <div class="pagination-btns" id="pagination-btns-container">
+          <button type="button" class="h-4 btn-paginator " id="first-page-btn">&lt;&lt;</button>
+          <button type="button" class="h-4 btn-paginator " id="prev-page-btn">&lt;</button>
           <button type="button" class="h-4 btn-paginator current-page-btn" id="current-page-btn">1</button>
           <button type="button" class="h-4 btn-paginator" id="next-page-btn">&gt;</button>
           <button type="button" class="h-4 btn-paginator" id="last-page-btn">&gt;&gt;</button>
@@ -119,6 +119,28 @@
       </div>
     </div>
   </footer>
+  <template id="popup-template">
+    <div class="popup">
+      <div class="popup-close-btn"></div>
+      <div class="popup-img-wrapper"></div>
+      <div class="popup-text-wrapper">
+        <div class="popup-header">
+          <h3 class="h-3 pet-name">Jennifer</h3>
+          <h4 class="h-4 pet-type"><span class="type">Dog</span> - <span class="breed">Labrador</span></h4>
+        </div>
+        <p class="h-5 pet-description">Jennifer is a sweet 2 months old Labrador that is patiently waiting to find a new
+          forever home. This girl really enjoys being able to go outside to run and play, but won't hesitate to play up
+          a
+          storm in the house if she has all of her favorite toys.</p>
+        <ul class="pet-specs">
+          <li class="h-5"><strong>Age:</strong> <span class="pet-age">2 months</span></li>
+          <li class="h-5"><strong>Inoculations:</strong> <span class="pet-inoculation">none</span></li>
+          <li class="h-5"><strong>Diseases:</strong> <span class="pet-diseases">none</span></li>
+          <li class="h-5"><strong>Parasites:</strong> <span class="pet-parasites">none</span></li>
+        </ul>
+      </div>
+    </div>
+  </template>
   <script type="module" src="../index-our-pets.js"></script>
 </body>
 
