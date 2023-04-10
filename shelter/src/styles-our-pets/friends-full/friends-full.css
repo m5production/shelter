@@ -18,27 +18,34 @@
   text-align: center;
 }
 
-.pagination-wrapper {
+.pagination-btns {
   display: flex;
-  gap: 20px;
+  max-width: 340px;
+  width: 100%;
+  justify-content: space-between;
+  gap: 5px;
 }
-
-.current-page-btn {
+.pagination-btns .current-page-btn {
   background-color: #F1CDB3;
 }
-.current-page-btn:hover {
+.pagination-btns .current-page-btn:hover {
   background-color: #F1CDB3;
   border-color: #F1CDB3;
   cursor: default;
 }
 
+.pagination-track {
+  position: static;
+  width: unset;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.pagination-track .slider-card {
+  display: flex;
+}
+
 @media (max-width: 768px) {
-  .slider-card.slider-large {
-    display: flex;
-  }
-  .slider-card.slider-large:nth-child(n+7) {
-    display: none;
-  }
   .content-friends {
     gap: 30px;
   }
@@ -47,9 +54,6 @@
   }
 }
 @media (max-width: 400px) {
-  .slider-card.slider-large:nth-child(n+4) {
-    display: none;
-  }
   .pagination-wrapper {
     gap: 10px;
   }

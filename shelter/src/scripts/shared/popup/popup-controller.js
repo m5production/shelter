@@ -1,5 +1,5 @@
-import { BodyBlackout } from "../shared/body-blackout.js";
-import { PopUp } from "../shared/pop-up.js";
+import { BodyBlackout } from "../body-blackout.js";
+import { PopUp } from "./pop-up.js";
 
 export class PopUpController extends PopUp {
   constructor(petData) {

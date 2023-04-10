@@ -3,14 +3,11 @@ import petsData from "../../../assets/data/pets.json" assert {type: 'json'};
 export const petsPaginationData = createPetsPaginationList(petsData);
 
 function createPetsPaginationList(petsData) {
-  const res = [];
+  let res = [];
   
   for (let i = 0; i < 6; i++) {
     const shuffledArr = shuffleArr(petsData);
-
-    for (let j = 0; j < shuffledArr.length; j++) {
-      
-    }
+    res = [...res, ...shuffledArr];
   }
 
   return res;
