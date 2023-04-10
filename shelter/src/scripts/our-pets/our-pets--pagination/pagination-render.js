@@ -4,12 +4,46 @@ export class Pagination {
     this.handleCardClick = handleCardClick;
     this.totalCardsNumber = listLength;
     this.firstRenderedCardIndex = 0;
+    this.bodyWidth = this.checkBodyWidth(); //small < 600; 600 < medium < 1200; 1200 < large 
 
     this.cardContainer = document.querySelector('.pagination-track');
     this.paginationBtnsContainer = document.getElementById('pagination-btns-container');
     this.paginationBtnsContainer.onclick = (e) => this.handlePaginationBtnClick(e);
 
     this.renderCards();
+
+    window.onresize = () => this.handleWindowSizeChange();
+  }
+
+  handleWindowSizeChange() {
+    const newBodyWidth = this.checkBodyWidth();
+    
+    if(newBodyWidth === this.bodyWidth) return;
+    
+    this.bodyWidth = newBodyWidth;
+    console.log(this.firstRenderedCardIndex)
+    this.firstRenderedCardIndex = this.getFirstRenderedCardIndex(this.firstRenderedCardIndex);
+    this.renderCards();
+  }
+
+  getFirstRenderedCardIndex(oldIdx){
+    const cardsOnPageNum = this.getCardsOnPageNumber();
+    let newFirstCardOnPageIndex = 0;
+    
+    while(newFirstCardOnPageIndex + cardsOnPageNum < oldIdx){
+      newFirstCardOnPageIndex += cardsOnPageNum;
+    }
+
+    return newFirstCardOnPageIndex;
+  }
+
+  checkBodyWidth() {
+    const width = document.body.clientWidth;
+    return width < 600
+      ? 'small'
+      : width < 1200
+        ? 'medium'
+        : 'large';
   }
 
   initializeBtns() {
