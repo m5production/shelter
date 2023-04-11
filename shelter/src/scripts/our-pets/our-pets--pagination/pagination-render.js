@@ -21,7 +21,7 @@ export class Pagination {
     if(newBodyWidth === this.bodyWidth) return;
     
     this.bodyWidth = newBodyWidth;
-    console.log(this.firstRenderedCardIndex)
+
     this.firstRenderedCardIndex = this.getFirstRenderedCardIndex(this.firstRenderedCardIndex);
     this.renderCards();
   }
@@ -91,6 +91,7 @@ export class Pagination {
   }
 
   renderCards() {
+    console.log(this.getCardsOnPageNumber());
     const lastCardIndex = this.firstRenderedCardIndex + this.getCardsOnPageNumber();
     this.cardContainer.innerHTML = '';
 
@@ -114,11 +115,11 @@ export class Pagination {
   }
 
   getCardsOnPageNumber() {
-    const windowWidth = window.innerWidth;
+    const windowWidth = document.body.clientWidth;
     return windowWidth < 600
       ? 3
       : windowWidth < 1200
         ? 6
-        : 8
+        : 8;
   }
 }
