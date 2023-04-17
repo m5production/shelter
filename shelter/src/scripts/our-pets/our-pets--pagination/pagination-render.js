@@ -66,7 +66,8 @@ export class Pagination {
 
   handlePaginationBtnClick(e) {
     const btn = e.target.closest('.btn-paginator');
-    if (btn.classList.contains('inactive')) return;
+    
+    if (!btn || btn.classList.contains('inactive')) return;
 
     const value = btn.id.split('-')[0];
 
@@ -91,7 +92,6 @@ export class Pagination {
   }
 
   renderCards() {
-    console.log(this.getCardsOnPageNumber());
     const lastCardIndex = this.firstRenderedCardIndex + this.getCardsOnPageNumber();
     this.cardContainer.innerHTML = '';
 

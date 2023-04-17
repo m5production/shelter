@@ -51,9 +51,6 @@ export class PetsSlider {
 
       do {
         nextNum = Math.floor(Math.random() * this.cardsListLength);
-        if (ctr++ > 16) {
-          throw new Error('бля говно! зашли в бесконечный цикл!')
-        }
       } while (numbers.includes(nextNum) || this.currentShownCards.includes(nextNum));
 
       numbers.push(nextNum);
@@ -68,7 +65,7 @@ export class PetsSlider {
       btn.value = 'left'; //соответствует названию класса с аниацией в css
       btn.onclick = (e) => this.handleBtnClick(e);
     });
-    
+
     const slideNextBtns = Array.from(document.querySelectorAll('.slide-next-btn'));
     slideNextBtns.forEach(btn => {
       btn.value = 'right'; //соответствует названию класса с аниацией в css
