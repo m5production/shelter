@@ -1,2 +1,3 @@
-import '../shared/burgerMenu/burger-menu-controller.js';
-import './pets-slider/pets-slider-controller.js';
+import '../../styles/index.scss';
+import '../shared/burgerMenu/burger-menu-controller';
+import './pets-slider/pets-slider-controller';

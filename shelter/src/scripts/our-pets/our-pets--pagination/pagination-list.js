@@ -1,4 +1,4 @@
-import petsData from "../../../assets/data/pets.json" assert {type: 'json'};
+import petsData from "../../../assets/data/pets";
 
 export const petsPaginationData = createPetsPaginationList(petsData);
 

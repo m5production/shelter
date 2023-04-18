@@ -1,4 +1,4 @@
-import petsListData from "../../../assets/data/pets.json" assert {type: 'json'};
+import petsListData from "../../../assets/data/pets";
 import { PetsListData } from "../../shared/pets-list.js";
 import { PopUpController } from "../../shared/popup/popup-controller.js";
 import { PetsSlider } from "./pets-slider.js";
