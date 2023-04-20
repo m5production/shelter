@@ -23,7 +23,7 @@ export class PopUp{
     const diseases = this.node.querySelector('.pet-diseases');
     const parasites = this.node.querySelector('.pet-parasites');
 
-    img.style.backgroundImage = `url(${petData.img})`;
+    img.style.backgroundImage = petData.img;
     petName.textContent = petData.name;
     type.textContent = petData.type;
     breed.textContent = petData.breed;

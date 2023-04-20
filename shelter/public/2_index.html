@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="images\favicon.6095f7a7e74689c98b33.svg" type="image/svg+xml">
+  <title>Cozy House - Shelter for pets in Boston_Our pets</title>
+<script defer src="bundle.cfcae8885b1486d78455.js"></script></head>
+
+<body>
+  <header class="main-header">
+
+    <h1 hidden>Cozy House. Shelter for pets in Boston. Our friends.</h1>
+
+    <div class="content-wrapper">
+
+      <a href="./1_index.html">
+        <div class="logo-container">
+          <div class="logo-title">Cozy House</div>
+          <div class="logo-subtitle">Shelter for pets in Boston</div>
+        </div>
+      </a>
+
+      <nav class="main-nav">
+        <ul class="nav-list">
+          <li class="nav-list__item"><a href="./1_index.html" class="paragraph-l nav-list__item__link">About the
+              shelter</a>
+          </li>
+          <li class="nav-list__item"><a href="#" class="paragraph-l nav-list__item__link active">Our pets</a>
+          </li>
+          <li class="nav-list__item"><a href="./1_index.html#help-section" class="paragraph-l nav-list__item__link">Help
+              the
+              shelter</a></li>
+          <li class="nav-list__item"><a href="#footer-contacts" class="paragraph-l nav-list__item__link">Contacts</a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="burger-menu-btn burger-black">
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="friends-section outer-section-wrapper">
+
+      <div class="content-wrapper content-friends">
+
+        <h3 class="h-3 section-heading">Our friends who are&nbsp;looking for a house</h3>
+
+        <div class="slider-container pagination-container">
+
+          <ul class="slider-track pagination-track">
+          </ul>
+
+          <template id="pet-card-template">
+            <div class="slider-card">
+              <img src="images\pets-katrine.e335f0c8ca41ae153d1d.png" alt="Grey cat with yellow eyes."
+                class="card-img">
+              <h4 class="card-name">PetName</h4>
+              <button class="btn btn-secondary card-btn">Learn more</button>
+            </div>
+          </template>
+        </div>
+
+        <div class="pagination-btns" id="pagination-btns-container">
+          <button type="button" class="h-4 btn-paginator " id="first-page-btn">&lt;&lt;</button>
+          <button type="button" class="h-4 btn-paginator " id="prev-page-btn">&lt;</button>
+          <button type="button" class="h-4 btn-paginator current-page-btn" id="current-page-btn">1</button>
+          <button type="button" class="h-4 btn-paginator" id="next-page-btn">&gt;</button>
+          <button type="button" class="h-4 btn-paginator" id="last-page-btn">&gt;&gt;</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="main-footer">
+
+    <div class="content-wrapper footer-content">
+
+      <div class="footer-text-content-wrapper">
+
+        <div class="footer-contacts" id="footer-contacts">
+
+          <h3 class="h-3 light-color-text">For questions and suggestions</h3>
+
+          <div class="contacts-container">
+            <a class="h-4 primary-color-text shelter-email" href="mailto:email@shelter.com">email@shelter.com</a>
+          </div>
+
+          <div class="contacts-container">
+            <a class="h-4 primary-color-text shelter-phone" href="tel:+136745677554">+13 674 567 75 54</a>
+          </div>
+        </div>
+
+        <div class="footer-contacts">
+
+          <h3 class="h-3 light-color-text">We are waiting for your&nbsp;visit</h3>
+
+          <div class="contacts-container">
+
+            <a class="h-4 primary-color-text address" href="https://goo.gl/maps/w4H6oZ3HPfLiYpUq6" target="_blank">1
+              Central Street, Boston (entrance from the store)</a>
+          </div>
+
+          <div class="contacts-container">
+
+            <a class="h-4 primary-color-text address" href="https://goo.gl/maps/ucvS7e1TwYxCLJQUA" target="_blank">18
+              South Park, London</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="img-wrapper">
+        <img class="footer-img" src="images\footer-puppy.ee72d148fede821a1c39.png" alt="Cute brown puppy licking camera.">
+      </div>
+    </div>
+  </footer>
+
+  <template id="popup-template">
+    <div class="popup">
+      <div class="popup-close-btn"></div>
+      <div class="popup-img-wrapper"></div>
+      <div class="popup-text-wrapper">
+        <div class="popup-header">
+          <h3 class="h-3 pet-name">Jennifer</h3>
+          <h4 class="h-4 pet-type"><span class="type">Dog</span> - <span class="breed">Labrador</span></h4>
+        </div>
+        <p class="h-5 pet-description">Jennifer is a sweet 2 months old Labrador that is patiently waiting to find a new
+          forever home. This girl really enjoys being able to go outside to run and play, but won't hesitate to play up
+          a
+          storm in the house if she has all of her favorite toys.</p>
+        <ul class="pet-specs">
+          <li class="h-5"><strong>Age:</strong> <span class="pet-age">2 months</span></li>
+          <li class="h-5"><strong>Inoculations:</strong> <span class="pet-inoculation">none</span></li>
+          <li class="h-5"><strong>Diseases:</strong> <span class="pet-diseases">none</span></li>
+          <li class="h-5"><strong>Parasites:</strong> <span class="pet-parasites">none</span></li>
+        </ul>
+      </div>
+    </div>
+  </template>
+
+</body>
+
+</html>
