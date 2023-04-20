@@ -1,5 +1,7 @@
 #Shelter
 
+Deploy: https://m5production.github.io/shelter/shelter/src/pages/1_index.html
+
 Student project made in terms of JS stage1Q12023 in RSSchool
 
 Features:
